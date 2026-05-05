@@ -11,7 +11,7 @@
 
 ## Abstract
 
-We address the "black-box" nature of Large Language Model (LLM) information extraction. While LLMs excel at parsing, they lack inherent mechanisms to prove factual grounding, a problem extensively documented by Dhuliawala et al. [1] and Huang et al. [2]. I introduce Source-Anchor Verification (SAV), a methodology that requires models to provide character-level offsets for every extracted field. My results demonstrate that deterministic validation of these offsets reduces the hallucination rate to near-zero for structured fields. I further extend SAV with a multi-stage verification hierarchy that distinguishes between genuine hallucinations and legitimate OCR corrections, building on Smith's work on Tesseract OCR error patterns [3], enabling robust extraction even from noisy document scans.
+I address the "black-box" nature of Large Language Model (LLM) information extraction. While LLMs excel at parsing, they lack inherent mechanisms to prove factual grounding, a problem extensively documented by Dhuliawala et al. [1] and Huang et al. [2]. I introduce Source-Anchor Verification (SAV), a methodology that requires models to provide character-level offsets for every extracted field. My results demonstrate that deterministic validation of these offsets reduces the hallucination rate to near-zero for structured fields. I further extend SAV with a multi-stage verification hierarchy that distinguishes between genuine hallucinations and legitimate OCR corrections, building on Smith's work on Tesseract OCR error patterns [3], enabling robust extraction even from noisy document scans.
 
 **Keywords:** LLM, information extraction, grounding, verification, hallucination detection, OCR error correction, Levenshtein distance
 
